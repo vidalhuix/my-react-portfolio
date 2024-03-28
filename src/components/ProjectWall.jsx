@@ -16,11 +16,13 @@ useEffect(() => {
       return response.json()
     })
     .then(jsonData => {
-      const sortedData = jsonData.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+      const filteredData = jsonData.filter(repo => repo.topics.includes("portfolio")) // Filter repositories with "important" topic
+      const sortedData = filteredData.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
       setData(sortedData)
       /* console.log(jsonData) */
       console.log("Filtered array:", jsonData.map(repo => ({
         id: repo.id,
+        starred_url: repo.starred_url,
         name: repo.name,
         description: repo.description,
         created_at: repo.created_at,
@@ -44,7 +46,8 @@ useEffect(() => {
       {error && <div>Error: {error.message}</div>}
       {data && (
         <div>
-        {data.map(repo => (
+        {data
+          .map(repo => (
           <ProjectContainer
             key={repo.id}
             /* id={repo.id} */
@@ -60,9 +63,3 @@ useEffect(() => {
     </div>
   )
 }
-
-/* "id"
-"description"
-"created_at"
-"homepage"
-"topics" */
