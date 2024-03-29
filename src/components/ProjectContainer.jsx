@@ -1,7 +1,4 @@
-import { BtnLiveDemo } from "./buttons/BtnLiveDemo"
-import { BtnViewCode } from "./buttons/BtnViewCode"
-
-
+import { BtnLiveDemo, BtnViewCode } from "./buttons/Btn"
 
 export const ProjectContainer = ({ id, name, description, created_at, homepage, git_url, topics }) => {
   return (
