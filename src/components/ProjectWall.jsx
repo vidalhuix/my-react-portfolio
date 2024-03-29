@@ -26,6 +26,7 @@ useEffect(() => {
         name: repo.name,
         description: repo.description,
         created_at: repo.created_at,
+        git_url: repo.git_url,
         homepage: repo.homepage,
         topics: repo.topics
       })));
@@ -57,6 +58,7 @@ useEffect(() => {
             created_at={calculateTimeDifference(repo.created_at)}
             homepage={repo.homepage}
             topics={repo.topics}
+            git_url={repo.git_url}
           />
         ))}
       </div>
