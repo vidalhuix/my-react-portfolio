@@ -8,7 +8,7 @@ export const ContactSection = () => {
   return (
   <div>
     <h1>Let`s talk</h1>
-    <img src={profilePic} width="150" alt="profile-picuture"/>
+    <img className="profile-pic" src={profilePic} width="150" alt="profile-picuture"/>
     <h2>Arnau Vidal</h2>
     <h2>+46(0)063123345</h2>
     <h2>arnauvidal@gmail.com</h2>
