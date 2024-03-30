@@ -1,6 +1,7 @@
 import LiveDemo from "../../assets/Btn-live-demo.svg"
 import ViewCode from "../../assets/Btn-github.svg"
-import styles from "./Btn.module.css"
+import Arrow from "../../assets/Btn-arrow.svg"
+import styles from "./Buttons.module.css"
 
 export const BtnLiveDemo = ({ homepage }) =>{
   return(
@@ -20,6 +21,14 @@ export const BtnViewCode = ({ git_url }) =>{
         <img src={ViewCode} width={48} alt="github-icon" />
         <p>View the code</p>
       </a> 
+    </div>
+  )
+}
+
+export const BtnArrow = () => {
+  return (
+    <div className={styles.btncontainer}>
+      <img src={Arrow} alt="arrow" />
     </div>
   )
 }
