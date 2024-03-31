@@ -27,8 +27,12 @@ export const BtnViewCode = ({ git_url }) =>{
 
 export const BtnArrow = () => {
   return (
-    <div className={styles.btncontainer}>
-      <img src={Arrow} alt="arrow" />
+    <div className={styles.arrowContainer}>
+      <div className={styles.arrowDown}>
+        <div className={styles.arrowUp}>
+         <img src={Arrow} alt="arrow" /> 
+        </div>
+      </div>
     </div>
   )
 }

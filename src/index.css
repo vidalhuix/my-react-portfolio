@@ -20,13 +20,18 @@ a {
   font-size: 20px;
 }
 
-h1 {
-  font-size: 32px;
+.titleSection{
+  font-size: 56px;
+  text-align: center;
+  color: #0B25F5;
 }
+
 
 h2 {
   font-size: 18px;
 }
+
+
 
 /* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
 

@@ -44,7 +44,7 @@ useEffect(() => {
 
   return (
     <div>
-      <h1>Featured Projects</h1>
+      <h1 className="titleSection">Featured Projects</h1>
       {error && <div>Error: {error.message}</div>}
       {data && (
         <div>

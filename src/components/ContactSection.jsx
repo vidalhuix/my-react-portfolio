@@ -7,7 +7,7 @@ import IconTwitter from "../assets/Btn-twitter.svg"
 export const ContactSection = () => {
   return (
   <div>
-    <h1>Let`s talk</h1>
+    <h1 className="titleSection">Let`s talk</h1>
     <img className="profile-pic" src={profilePic} width="150" alt="profile-picuture"/>
     <h2>Arnau Vidal</h2>
     <h2>+46(0)063123345</h2>

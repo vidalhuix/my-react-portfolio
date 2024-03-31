@@ -1,17 +1,30 @@
-import { BtnLiveDemo, BtnViewCode } from "./buttons/Btn"
+import { BtnLiveDemo, BtnViewCode } from "./buttons/Buttons"
+import styles from "./ProjectContainer.module.css"
 
-export const ProjectContainer = ({ id, name, description, created_at, homepage, git_url, topics }) => {
+export const ProjectContainer = ({ imageLink, name, description, created_at, homepage, git_url, topics }) => {
+  const imageLink = `https://raw.githubusercontent.com/vidalhuix/${name}/blob/main/src/assets/featured-image.jpg`
+
   return (
-    <div>
-      <h2>{id}</h2>
-      <h4>{name}</h4>
-      <p>{description}</p>
-      <p>{created_at}</p>
+    <div className={styles.project}>
+      <img src={imageLink} alt="Project Iamge"/>
+      <h2>{name}</h2>
+      <p>{description}
+      <span className={styles.createdAt}> Created {created_at}.</span>
+      </p>
+      <div className={styles.topics}>
+        {topics.length > 0 ? (
+          <ul>
+            {topics.map((topic, index) => (
+              <li key={index}>{topic}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>No topics</p>
+        )}
+      </div>
       <BtnLiveDemo homepage={homepage} />
       <BtnViewCode git_url={git_url} />
-      <p>{topics.length > 0 ? topics.join(" / ") : "No topics"}</p>
       <hr />
     </div>
   )
 }
- 

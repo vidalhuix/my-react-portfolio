@@ -1,0 +1,42 @@
+.project {
+  display: inline-block;
+  flex-direction: column;
+  padding: 16px 16px;
+  gap: 32px 16px;
+}
+
+.project > h2{  
+  font-size: 24px;
+}
+
+.project > p{
+  font-size: 18px;
+}
+
+.createdAt{
+  color: rgb(161, 161, 161);
+  text-align: right;
+}
+
+.project > h2,
+.project > div,
+.project > p {
+  grid-column: 1 / 5;
+  margin: 0;
+}
+
+.topics > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0; 
+}
+
+.topics > ul > li {
+  font-size: 16px;
+  padding: 2px 6px;
+  color: white;
+  background-color: black;
+}

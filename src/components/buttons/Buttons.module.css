@@ -40,5 +40,37 @@
   color: white;
 }
 
+.arrowContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.arrowDown {
+  animation: down 2s ease-in infinite;
+}
 
+.arrowUp {
+  animation: down 2s ease-in infinite;
+}
+
+@keyframes up {
+  0%,
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-30px);
+  }
+  20%,
+  100% {
+    transform: translateY(0px);
+  }
+}
