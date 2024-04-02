@@ -1,0 +1,21 @@
+.contactSection {
+  padding: 128px 16px;
+}
+
+.contactSection,
+.contactSection > h2,
+.contactSection > p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.profilepic {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.contactIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
