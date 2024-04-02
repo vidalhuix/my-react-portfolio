@@ -1,9 +1,9 @@
-import { ContactSection } from "./ContactSection"
-import { Footer } from "./Footer"
 import { Header } from "./Header"
+import { TechSection } from "./TechSection"
 import { ProjectWall } from "./ProjectWall"
 import { SkillsSection } from "./SkillsSection"
-import { TechSection } from "./TechSection"
+import { ContactSection } from "./ContactSection"
+import { Ticker } from "./Ticker"
 
 
 export const Content = () => {
@@ -14,7 +14,7 @@ export const Content = () => {
       <ProjectWall />
       <SkillsSection />
       <ContactSection />
-      <Footer />
+      <Ticker />
     </div>
   )
 }

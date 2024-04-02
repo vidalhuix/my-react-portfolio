@@ -1,0 +1,24 @@
+  .tickerContainer {
+    overflow: hidden;
+    background-color: #6DB486;
+    color: white;
+    height: 114px;
+  }
+  
+  .ticker {
+    white-space: nowrap;
+    animation: tickerMove linear infinite;
+  }
+  
+  .ticker span{
+    font-size: 24px;
+  }
+  
+  @keyframes tickerMove {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
