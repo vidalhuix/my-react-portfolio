@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
 /* MOBILE SCREENS MAX 745px------------------------------------------------------------ */
 
 body {

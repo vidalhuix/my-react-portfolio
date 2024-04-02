@@ -2,11 +2,11 @@ import { BtnLiveDemo, BtnViewCode } from "./buttons/Buttons"
 import styles from "./ProjectContainer.module.css"
 
 export const ProjectContainer = ({ name, description, created_at, homepage, git_url, topics }) => {
-  const imageLink = `https://raw.githubusercontent.com/vidalhuix/${name}/main/Featured-image.jpg`
+  const imageLink = `https://raw.githubusercontent.com/vidalhuix/${name}/main/src/assets/Featured-image.jpg`
 
   return (
     <div className={styles.project}>
-      <img src={imageLink} alt="Project image"/>
+      <img className={styles.featuredImg} src={imageLink} alt="Project image"/>
       <h2>{name.replace(/-/g, ' ').toUpperCase()}</h2>
       <p>{description}
       <span className={styles.createdAt}> Created {created_at}.</span>
