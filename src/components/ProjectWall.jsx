@@ -52,8 +52,7 @@ useEffect(() => {
           .map(repo => (
           <ProjectContainer
             key={repo.id}
-            /* id={repo.id} */
-            name={repo.name.replace(/-/g, ' ').toUpperCase()}
+            name={repo.name}
             description={repo.description}
             created_at={calculateTimeDifference(repo.created_at)}
             homepage={repo.homepage}
