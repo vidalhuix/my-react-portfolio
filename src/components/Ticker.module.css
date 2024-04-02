@@ -17,8 +17,12 @@
 
 .tickerScroll div{
   display: flex;
-  gap: 2em;
 }
+
+.tickerScroll span{
+  margin-left: 5px;
+}
+
 
 .LeftToRight {
   animation: LeftToRight 400s infinite linear;

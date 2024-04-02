@@ -24,7 +24,6 @@ export const ProjectContainer = ({ name, description, created_at, homepage, git_
       </div>
       <BtnLiveDemo homepage={homepage} />
       <BtnViewCode git_url={git_url} />
-      <hr />
     </div>
   )
 }
