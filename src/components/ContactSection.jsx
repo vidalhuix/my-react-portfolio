@@ -14,10 +14,9 @@ export const ContactSection = () => {
     <h2>+46(0)063123345</h2>
     <h2>arnauvidal@gmail.com</h2>
     <div className={styles.contactIcons}>
-      <a href="https://github.com/vidalhuix"><img src={githubIcon} alt="github-icon"/></a>  
-      <a href="https://www.linkedin.com/in/arnau-vidal-i-huix-4266a940/"><img src={IconLinkedin} alt="icon linkedin" /></a>
-      <a href=""><img src={IconStackoverflow} alt="icon stackoverflow" /></a>
-      <a href=""><img src={IconTwitter} alt="icon twitter" /></a>   
+      <a href="https://github.com/vidalhuix" target="_blank"><img src={githubIcon} alt="github-icon"/></a>  
+      <a href="https://www.linkedin.com/in/arnau-vidal-i-huix-4266a940/" target="_blank"><img src={IconLinkedin} alt="icon linkedin" /></a>
+      <a href="https://stackoverflowteams.com/c/technigo/users/604/?tab=profile" target="_blank"><img src={IconStackoverflow} alt="icon stackoverflow" /></a>
     </div>
   </div>
   )
