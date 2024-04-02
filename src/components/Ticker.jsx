@@ -1,34 +1,31 @@
-import { useEffect, useRef } from "react"
-import styles from "./Ticker.module.css"
+import { useState, useEffect, useRef } from 'react';
+import styles from './Ticker.module.css';
 
 export const Ticker = () => {
-  const tickerRef = useRef(null)
+  const [tickerText, setTickerText] = useState('Arnau Vidal ・Frontend Developer ・');
+  const tickerContainerRef = useRef(null);
 
+  // Function to update ticker text position
+  const updateTickerPosition = () => {
+    const containerWidth = tickerContainerRef.current.offsetWidth;
+    const textWidth = tickerContainerRef.current.scrollWidth;
+
+    // If text exceeds container width, reset position
+    if (textWidth > containerWidth) {
+      setTickerText(tickerText.substring(1) + tickerText[0]);
+    }
+  };
+
+  // Set up ticker animation effect
   useEffect(() => {
-    const tickerElement = tickerRef.current
-    const tickerWidth = tickerElement.offsetWidth
-    const containerWidth = tickerElement.parentElement.offsetWidth
-
-    const animationDuration = (tickerWidth + containerWidth) / 100 // Adjust speed here
-    tickerElement.style.animationDuration = `${animationDuration}s`
-  }, [])
+    const tickerInterval = setInterval(updateTickerPosition, 50);
+    return () => clearInterval(tickerInterval);
+  }, [tickerText]);
 
   return (
-    <div className={styles.tickerContainer}>
-      <div className={styles.ticker} ref={tickerRef}>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-        <span>Arnau Vidal ・ Frontend Developer ・</span>
-      </div>
+    <div className={styles.tickerContainer} ref={tickerContainerRef}>
+      <div className={styles.tickerText}>{tickerText}</div>
     </div>
-  )
-}
+  );
+};
+
