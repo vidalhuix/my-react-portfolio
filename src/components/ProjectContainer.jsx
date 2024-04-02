@@ -6,7 +6,7 @@ export const ProjectContainer = ({ name, description, created_at, homepage, git_
 
   return (
     <div className={styles.project}>
-      <img className={styles.featuredImg} src={imageLink} alt="Project image"/>
+      <img className={styles.featuredImg} src={imageLink} alt="Project-image"/>
       <h2>{name.replace(/-/g, ' ').toUpperCase()}</h2>
       <p>{description}
       <span className={styles.createdAt}> Created {created_at}.</span>

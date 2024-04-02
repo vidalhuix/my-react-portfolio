@@ -1,8 +1,10 @@
-# React + Vite
+# My first react portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an elaborate portfolio made in React using Vite. It primarily utilizes components and CSS modules. The portfolio fetches information from my GitHub account using GH API. The design closely follows an existing Figma design and prioritizes accessibility.
 
-Currently, two official plugins are available:
+## The Problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This week, the main challenge was being sick for three days. I also had to deal with a delivery and begin working on the documentation for the comming week. 
+
+## View it live
+Click [here](https://arnaus-react-portafolio.netlify.app/)
