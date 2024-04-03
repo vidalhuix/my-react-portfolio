@@ -37,8 +37,11 @@ h1 {
 
 .flex-row {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 22px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .background-box{
@@ -84,7 +87,9 @@ h1 {
 /* TABLET SCREENS 745px to 1281px------------------------------------------------------------ */
 
 @media (min-width:745px) and (max-width:1280px){
-
+  .flex-row {
+    max-width: 700px;
+  }
 }
 
 /* TABLET SCREENS 1281px to 1513xp------------------------------------------------------------ */
@@ -93,11 +98,6 @@ h1 {
   h1 {
     font-size: 80px;
   }
-
-  /* body{
-    grid-template-columns: repeat (12, 1fr);
-    padding:132px;
-  } */
 }
 
 /* TABLET SCREENS MIN 1513xp------------------------------------------------------------ */
@@ -107,9 +107,4 @@ h1 {
     grid-column: 2 / 8;
     font-size: 80px;
   }
-
-/*   body{
-    grid-template-columns: repeat (12, 1fr);
-    padding:132px;
-  } */
 }
