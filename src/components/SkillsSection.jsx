@@ -3,7 +3,7 @@ import styles from "./SkillsSection.module.css"
 export const SkillsSection = () => {
   return (
     <div className={styles.skillsContainer}>
-      <h1 className="titleSection">Skills</h1>
+      <h1 className="section-title">Skills</h1>
       <div className={styles.skillSetContainer}>
         <h2 className={styles.red}>Code</h2>
         <p>HTML5</p>

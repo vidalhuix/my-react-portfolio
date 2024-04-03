@@ -17,6 +17,11 @@ h1 {
   font-size: 56px;
 }
 
+.section-title{
+  text-align: center;
+  color: #0B24F5;
+}
+
 .profile-pic {
   width: 164px;
   border-radius: 50%;
